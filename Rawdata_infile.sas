@@ -1,11 +1,11 @@
-libname main "D:\¿¬±¸\ÀÎ°øÁö´É\VigiBase Extract Case Level 2022 Jun 1\rawdata_main";
-libname sub "D:\¿¬±¸\ÀÎ°øÁö´É\VigiBase Extract Case Level 2022 Jun 1\rawdata_sub";
-libname who "D:\¿¬±¸\ÀÎ°øÁö´É\VigiBase Extract Case Level 2022 Jun 1\rawdata_sub";
+libname main "D:\ì—°êµ¬\ì¸ê³µì§€ëŠ¥\VigiBase Extract Case Level 2022 Jun 1\rawdata_main";
+libname sub "D:\ì—°êµ¬\ì¸ê³µì§€ëŠ¥\VigiBase Extract Case Level 2022 Jun 1\rawdata_sub";
+libname who "D:\ì—°êµ¬\ì¸ê³µì§€ëŠ¥\VigiBase Extract Case Level 2022 Jun 1\rawdata_sub";
 
 /*Main-Demo*/
 data main.demo;
 %let _EFIERR_ = 0; /* set the ERROR detection macro variable */
-infile 'D:\¿¬±¸\ÀÎ°øÁö´É\VigiBase Extract Case Level 2022 Jun 1\main_files_extract_jun_1_2022\demo.txt' 
+infile 'D:\ì—°êµ¬\ì¸ê³µì§€ëŠ¥\VigiBase Extract Case Level 2022 Jun 1\main_files_extract_jun_1_2022\demo.txt' 
    MISSOVER DSD lrecl=32767 firstobs=1;
 
 informat UMCReportId 11. ;
@@ -40,7 +40,7 @@ run;
 /*Main-Drug*/
 data main.drug;
 %let _EFIERR_ = 0; /* set the ERROR detection macro variable */
-infile 'D:\¿¬±¸\ÀÎ°øÁö´É\VigiBase Extract Case Level 2022 Jun 1\main_files_extract_jun_1_2022\DRUG.txt' 
+infile 'D:\ì—°êµ¬\ì¸ê³µì§€ëŠ¥\VigiBase Extract Case Level 2022 Jun 1\main_files_extract_jun_1_2022\DRUG.txt' 
    MISSOVER DSD lrecl=32767 firstobs=1;
 
 informat UMCReportId 11. ;
@@ -90,7 +90,7 @@ run;
 /*Main-ADR*/
 data main.adr;
 %let _EFIERR_ = 0; 
-infile 'D:\¿¬±¸\ÀÎ°øÁö´É\VigiBase Extract Case Level 2022 Jun 1\main_files_extract_jun_1_2022\ADR.txt'
+infile 'D:\ì—°êµ¬\ì¸ê³µì§€ëŠ¥\VigiBase Extract Case Level 2022 Jun 1\main_files_extract_jun_1_2022\ADR.txt'
 MISSOVER DSD lrecl=32767 firstobs=1;
 
 informat UMCReportId 11. ;
@@ -116,7 +116,7 @@ run;
 /*Main-OUT*/
 data main.OUT;
 %let _EFIERR_ = 0; /* set the ERROR detection macro variable */
-infile 'D:\¿¬±¸\ÀÎ°øÁö´É\VigiBase Extract Case Level 2022 Jun 1\main_files_extract_jun_1_2022\OUT.txt'
+infile 'D:\ì—°êµ¬\ì¸ê³µì§€ëŠ¥\VigiBase Extract Case Level 2022 Jun 1\main_files_extract_jun_1_2022\OUT.txt'
    MISSOVER DSD lrecl=32767 firstobs=1;
 
 informat UMCReportId 11. ;
@@ -139,7 +139,7 @@ run;
 /*Main-SRCE*/
 data main.SRCE;
 %let _EFIERR_ = 0; /* set the ERROR detection macro variable */
-infile 'D:\¿¬±¸\ÀÎ°øÁö´É\VigiBase Extract Case Level 2022 Jun 1\main_files_extract_jun_1_2022\SRCE.txt'
+infile 'D:\ì—°êµ¬\ì¸ê³µì§€ëŠ¥\VigiBase Extract Case Level 2022 Jun 1\main_files_extract_jun_1_2022\SRCE.txt'
    MISSOVER DSD lrecl=32767 firstobs=1;
 
 informat UMCReportId 11. ;
@@ -160,7 +160,7 @@ run;
 data main.LINK;
 
 %let _EFIERR_ = 0; /* set the ERROR detection macro variable */
-infile 'D:\¿¬±¸\ÀÎ°øÁö´É\VigiBase Extract Case Level 2022 Jun 1\main_files_extract_jun_1_2022\LINK.txt'
+infile 'D:\ì—°êµ¬\ì¸ê³µì§€ëŠ¥\VigiBase Extract Case Level 2022 Jun 1\main_files_extract_jun_1_2022\LINK.txt'
    MISSOVER DSD lrecl=32767 firstobs=1;
 
 informat Drug_Id 11. ;
@@ -199,7 +199,7 @@ run;
 /*Main-IND*/
 data main.ind;
 %let _EFIERR_ = 0; 
-infile 'D:\¿¬±¸\ÀÎ°øÁö´É\VigiBase Extract Case Level 2022 Jun 1\main_files_extract_jun_1_2022\IND.txt'
+infile 'D:\ì—°êµ¬\ì¸ê³µì§€ëŠ¥\VigiBase Extract Case Level 2022 Jun 1\main_files_extract_jun_1_2022\IND.txt'
 MISSOVER DSD lrecl=32767 firstobs=1;
 
 informat Drug_Id 11. ;
@@ -219,7 +219,7 @@ run;
 /*Main-FOLLOWUP*/
 data main.followup;
 %let _EFIERR_ = 0; 
-infile 'D:\¿¬±¸\ÀÎ°øÁö´É\VigiBase Extract Case Level 2022 Jun 1\main_files_extract_jun_1_2022\FOLLOWUP.txt'
+infile 'D:\ì—°êµ¬\ì¸ê³µì§€ëŠ¥\VigiBase Extract Case Level 2022 Jun 1\main_files_extract_jun_1_2022\FOLLOWUP.txt'
 MISSOVER DSD lrecl=32767 firstobs=1;
 
 informat UMCReportId 11. ;
@@ -243,7 +243,7 @@ run;
 /*Subsidiary-Agegroup*/
 data sub.AgeGroup_Lx;
 %let _EFIERR_ = 0; /* set the ERROR detection macro variable */
-infile 'D:\¿¬±¸\ÀÎ°øÁö´É\VigiBase Extract Case Level 2022 Jun 1\subsidiary_files_extract_jun_1_2022\agegroup_lx.txt' 
+infile 'D:\ì—°êµ¬\ì¸ê³µì§€ëŠ¥\VigiBase Extract Case Level 2022 Jun 1\subsidiary_files_extract_jun_1_2022\agegroup_lx.txt' 
    MISSOVER DSD lrecl=32767 firstobs=1;
 
 informat Code $1. ;
@@ -263,7 +263,7 @@ run;
 /*Sub-Gender*/
 data sub.Gender_Lx;
 %let _EFIERR_ = 0; 
-infile 'D:\¿¬±¸\ÀÎ°øÁö´É\VigiBase Extract Case Level 2022 Jun 1\subsidiary_files_extract_jun_1_2022\Gender_Lx.txt'
+infile 'D:\ì—°êµ¬\ì¸ê³µì§€ëŠ¥\VigiBase Extract Case Level 2022 Jun 1\subsidiary_files_extract_jun_1_2022\Gender_Lx.txt'
 MISSOVER DSD lrecl=32767 firstobs=1;
 
 informat Code $1. ;
@@ -283,7 +283,7 @@ run;
 /*Sub-Reporttype*/
 data sub.Reporttype_Lx;
 %let _EFIERR_ = 0; 
-infile 'D:\¿¬±¸\ÀÎ°øÁö´É\VigiBase Extract Case Level 2022 Jun 1\subsidiary_files_extract_jun_1_2022\ReportType_Lx.txt'
+infile 'D:\ì—°êµ¬\ì¸ê³µì§€ëŠ¥\VigiBase Extract Case Level 2022 Jun 1\subsidiary_files_extract_jun_1_2022\ReportType_Lx.txt'
 MISSOVER DSD lrecl=32767 firstobs=1;
 
 informat Code $1. ;
@@ -303,7 +303,7 @@ run;
 /*Sub-Region*/
 data sub.Region_Lx;
 %let _EFIERR_ = 0; 
-infile 'D:\¿¬±¸\ÀÎ°øÁö´É\VigiBase Extract Case Level 2022 Jun 1\subsidiary_files_extract_jun_1_2022\Region_Lx.txt'
+infile 'D:\ì—°êµ¬\ì¸ê³µì§€ëŠ¥\VigiBase Extract Case Level 2022 Jun 1\subsidiary_files_extract_jun_1_2022\Region_Lx.txt'
 MISSOVER DSD lrecl=32767 firstobs=1;
 
 informat Code $1. ;
@@ -323,7 +323,7 @@ run;
 /*Sub-RouteOfAdm*/
 data sub.RouteOfAdmr_Lx;
 %let _EFIERR_ = 0; 
-infile 'D:\¿¬±¸\ÀÎ°øÁö´É\VigiBase Extract Case Level 2022 Jun 1\subsidiary_files_extract_jun_1_2022\RouteOfAdm_Lx.txt'
+infile 'D:\ì—°êµ¬\ì¸ê³µì§€ëŠ¥\VigiBase Extract Case Level 2022 Jun 1\subsidiary_files_extract_jun_1_2022\RouteOfAdm_Lx.txt'
 MISSOVER DSD lrecl=32767 firstobs=1;
 
 informat Code $2. ;
@@ -343,7 +343,7 @@ run;
 /*Sub-RepBasis*/
 data sub.RepBasis_Lx;
 %let _EFIERR_ = 0; 
-infile 'D:\¿¬±¸\ÀÎ°øÁö´É\VigiBase Extract Case Level 2022 Jun 1\subsidiary_files_extract_jun_1_2022\RepBasis_Lx.txt'
+infile 'D:\ì—°êµ¬\ì¸ê³µì§€ëŠ¥\VigiBase Extract Case Level 2022 Jun 1\subsidiary_files_extract_jun_1_2022\RepBasis_Lx.txt'
 MISSOVER DSD lrecl=32767 firstobs=1;
 
 informat Code $1. ;
@@ -362,7 +362,7 @@ run;
 /*Sub-SizeUnit*/
 data sub.SizeUnit_Lx;
 %let _EFIERR_ = 0; /* set the ERROR detection macro variable */
-infile 'D:\¿¬±¸\ÀÎ°øÁö´É\VigiBase Extract Case Level 2022 Jun 1\subsidiary_files_extract_jun_1_2022\SizeUnit_Lx.txt'
+infile 'D:\ì—°êµ¬\ì¸ê³µì§€ëŠ¥\VigiBase Extract Case Level 2022 Jun 1\subsidiary_files_extract_jun_1_2022\SizeUnit_Lx.txt'
    MISSOVER DSD lrecl=32767 firstobs=1;
 
 informat Code $2. ;
@@ -381,7 +381,7 @@ run;
 /*Sub-Frequency*/
 data sub.Frequency_Lx;
 %let _EFIERR_ = 0; /* set the ERROR detection macro variable */
-infile 'D:\¿¬±¸\ÀÎ°øÁö´É\VigiBase Extract Case Level 2022 Jun 1\subsidiary_files_extract_jun_1_2022\Frequency_Lx.txt'
+infile 'D:\ì—°êµ¬\ì¸ê³µì§€ëŠ¥\VigiBase Extract Case Level 2022 Jun 1\subsidiary_files_extract_jun_1_2022\Frequency_Lx.txt'
    MISSOVER DSD lrecl=32767 firstobs=1;
 
 informat Code $3. ;
@@ -401,7 +401,7 @@ run;
 /*Sub-Outcome*/
 data sub.Outcome_Lx;
 %let _EFIERR_ = 0; /* set the ERROR detection macro variable */
-infile 'D:\¿¬±¸\ÀÎ°øÁö´É\VigiBase Extract Case Level 2022 Jun 1\subsidiary_files_extract_jun_1_2022\Outcome_Lx.txt'
+infile 'D:\ì—°êµ¬\ì¸ê³µì§€ëŠ¥\VigiBase Extract Case Level 2022 Jun 1\subsidiary_files_extract_jun_1_2022\Outcome_Lx.txt'
    MISSOVER DSD lrecl=32767 firstobs=1;
 
 informat Code $1. ;
@@ -421,7 +421,7 @@ run;
 /*Sub-Seriousness*/
 data sub.Seriousness_Lx;
 %let _EFIERR_ = 0; /* set the ERROR detection macro variable */
-infile 'D:\¿¬±¸\ÀÎ°øÁö´É\VigiBase Extract Case Level 2022 Jun 1\subsidiary_files_extract_jun_1_2022\Seriousness_Lx.txt'
+infile 'D:\ì—°êµ¬\ì¸ê³µì§€ëŠ¥\VigiBase Extract Case Level 2022 Jun 1\subsidiary_files_extract_jun_1_2022\Seriousness_Lx.txt'
    MISSOVER DSD lrecl=32767 firstobs=1;
 
 informat Code $2. ;
@@ -440,7 +440,7 @@ run;
 /*Sub-Notifier*/
 data sub.Notifier_Lx;
 %let _EFIERR_ = 0; /* set the ERROR detection macro variable */
-infile 'D:\¿¬±¸\ÀÎ°øÁö´É\VigiBase Extract Case Level 2022 Jun 1\subsidiary_files_extract_jun_1_2022\Notifier_Lx.txt'
+infile 'D:\ì—°êµ¬\ì¸ê³µì§€ëŠ¥\VigiBase Extract Case Level 2022 Jun 1\subsidiary_files_extract_jun_1_2022\Notifier_Lx.txt'
    MISSOVER DSD lrecl=32767 firstobs=1;
 
 informat Code $2. ;
@@ -460,7 +460,7 @@ run;
 /*Sub-Dechallenge*/
 data sub.Dechallenge_Lx;
 %let _EFIERR_ = 0; /* set the ERROR detection macro variable */
-infile 'D:\¿¬±¸\ÀÎ°øÁö´É\VigiBase Extract Case Level 2022 Jun 1\subsidiary_files_extract_jun_1_2022\Dechallenge_Lx.txt'
+infile 'D:\ì—°êµ¬\ì¸ê³µì§€ëŠ¥\VigiBase Extract Case Level 2022 Jun 1\subsidiary_files_extract_jun_1_2022\Dechallenge_Lx.txt'
    MISSOVER DSD lrecl=32767 firstobs=1;
 
 informat Code $1. ;
@@ -480,7 +480,7 @@ run;
 /*Sub-Dechallenge2*/
 data sub.Dechallenge2_Lx;
 %let _EFIERR_ = 0; /* set the ERROR detection macro variable */
-infile 'D:\¿¬±¸\ÀÎ°øÁö´É\VigiBase Extract Case Level 2022 Jun 1\subsidiary_files_extract_jun_1_2022\Dechallenge2_Lx.txt'
+infile 'D:\ì—°êµ¬\ì¸ê³µì§€ëŠ¥\VigiBase Extract Case Level 2022 Jun 1\subsidiary_files_extract_jun_1_2022\Dechallenge2_Lx.txt'
    MISSOVER DSD lrecl=32767 firstobs=1;
 
 informat Code $1. ;
@@ -500,7 +500,7 @@ run;
 /* Sub - Rechallenge */
 data sub.Rechallenge_Lx;
 %let _EFIERR_ = 0; /* set the ERROR detection macro variable */
-infile 'D:\¿¬±¸\ÀÎ°øÁö´É\VigiBase Extract Case Level 2022 Jun 1\subsidiary_files_extract_jun_1_2022\Rechallenge_Lx.txt' 
+infile 'D:\ì—°êµ¬\ì¸ê³µì§€ëŠ¥\VigiBase Extract Case Level 2022 Jun 1\subsidiary_files_extract_jun_1_2022\Rechallenge_Lx.txt' 
    MISSOVER DSD lrecl=32767 firstobs=1;
 
 informat Code $1. ;
@@ -520,7 +520,7 @@ run;
 /* Sub - Rechallenge2 */
 data sub.Rechallenge2_Lx;
 %let _EFIERR_ = 0; /* set the ERROR detection macro variable */
-infile 'D:\¿¬±¸\ÀÎ°øÁö´É\VigiBase Extract Case Level 2022 Jun 1\subsidiary_files_extract_jun_1_2022\Rechallenge2_Lx.txt' 
+infile 'D:\ì—°êµ¬\ì¸ê³µì§€ëŠ¥\VigiBase Extract Case Level 2022 Jun 1\subsidiary_files_extract_jun_1_2022\Rechallenge2_Lx.txt' 
    MISSOVER DSD lrecl=32767 firstobs=1;
 
 informat Code $1. ;
@@ -540,7 +540,7 @@ run;
 /*Sub - MedDRAversion*/
 data sub.MedDRAversion;
 %let _EFIERR_ = 0; /* set the ERROR detection macro variable */
-infile 'D:\¿¬±¸\ÀÎ°øÁö´É\VigiBase Extract Case Level 2022 Jun 1\subsidiary_files_extract_jun_1_2022\MedDRAversion.txt' 
+infile 'D:\ì—°êµ¬\ì¸ê³µì§€ëŠ¥\VigiBase Extract Case Level 2022 Jun 1\subsidiary_files_extract_jun_1_2022\MedDRAversion.txt' 
    MISSOVER DSD lrecl=32767 firstobs=1;
 
 informat MedDRAVersion $10. ;
@@ -557,7 +557,7 @@ run;
 /* Sub - SUSPECTEDDUPLICATES */
 data sub.Suspectedduplicates;
 %let _EFIERR_ = 0; /* set the ERROR detection macro variable */
-infile 'D:\¿¬±¸\ÀÎ°øÁö´É\VigiBase Extract Case Level 2022 Jun 1\subsidiary_files_extract_jun_1_2022\SUSPECTEDDUPLICATES.txt' 
+infile 'D:\ì—°êµ¬\ì¸ê³µì§€ëŠ¥\VigiBase Extract Case Level 2022 Jun 1\subsidiary_files_extract_jun_1_2022\SUSPECTEDDUPLICATES.txt' 
    MISSOVER DSD lrecl=32767 firstobs=1;
 
 informat UMC_ReportId $11. ;
@@ -577,7 +577,7 @@ run;
 /* Sub - USCDERSAFETYREPORTID */
 data sub.UscDersafetyReportID;
 %let _EFIERR_ = 0; /* set the ERROR detection macro variable */
-infile 'D:\¿¬±¸\ÀÎ°øÁö´É\VigiBase Extract Case Level 2022 Jun 1\subsidiary_files_extract_jun_1_2022\USCDERSAFETYREPORTID.txt' 
+infile 'D:\ì—°êµ¬\ì¸ê³µì§€ëŠ¥\VigiBase Extract Case Level 2022 Jun 1\subsidiary_files_extract_jun_1_2022\USCDERSAFETYREPORTID.txt' 
    MISSOVER DSD lrecl=32767 firstobs=1;
 
 informat UMC_ReportId $11. ;
@@ -598,7 +598,7 @@ run;
 /*Who_ddx-Medicinal Product*/
 data who.mp;
 %let _EFIERR_ = 0; /* set the ERROR detection macro variable */
-infile 'D:\¿¬±¸\ÀÎ°øÁö´É\VigiBase Extract Case Level 2022 Jun 1\who_ddx_jun_1_2022\MP.txt' 
+infile 'D:\ì—°êµ¬\ì¸ê³µì§€ëŠ¥\VigiBase Extract Case Level 2022 Jun 1\who_ddx_jun_1_2022\MP.txt' 
    MISSOVER DSD lrecl=32767 firstobs=1;
 
 informat Medicinalprod_Id $10. ;
@@ -681,7 +681,7 @@ run;
 /*Who_ddx-PharmaceuticalProduct*/
 data who.PP;
 %let _EFIERR_ = 0; /* set the ERROR detection macro variable */
-infile 'D:\¿¬±¸\ÀÎ°øÁö´É\VigiBase Extract Case Level 2022 Jun 1\who_ddx_jun_1_2022\PP.txt' 
+infile 'D:\ì—°êµ¬\ì¸ê³µì§€ëŠ¥\VigiBase Extract Case Level 2022 Jun 1\who_ddx_jun_1_2022\PP.txt' 
    MISSOVER DSD lrecl=32767 firstobs=1;
 
 informat Pharmproduct_Id $10. ;
@@ -713,7 +713,7 @@ run;
 /*Who_ddx-ThG*/
 data who.ThG;
 %let _EFIERR_ = 0; /* set the ERROR detection macro variable */
-infile 'D:\¿¬±¸\ÀÎ°øÁö´É\VigiBase Extract Case Level 2022 Jun 1\who_ddx_jun_1_2022\ThG.txt' 
+infile 'D:\ì—°êµ¬\ì¸ê³µì§€ëŠ¥\VigiBase Extract Case Level 2022 Jun 1\who_ddx_jun_1_2022\ThG.txt' 
    MISSOVER DSD lrecl=32767 firstobs=1;
 
 informat Therapgroup_Id $10. ;
@@ -742,7 +742,7 @@ run;
 /*Who_ddx-Ingredient*/
 data who.ING;
 %let _EFIERR_ = 0; /* set the ERROR detection macro variable */
-infile 'D:\¿¬±¸\ÀÎ°øÁö´É\VigiBase Extract Case Level 2022 Jun 1\who_ddx_jun_1_2022\ING.txt' 
+infile 'D:\ì—°êµ¬\ì¸ê³µì§€ëŠ¥\VigiBase Extract Case Level 2022 Jun 1\who_ddx_jun_1_2022\ING.txt' 
    MISSOVER DSD lrecl=32767 firstobs=1;
 
 informat Ingredient_Id $10. ;
@@ -781,7 +781,7 @@ run;
 /*Who_ddx-Reference*/
 data who.SRCE;
 %let _EFIERR_ = 0; /* set the ERROR detection macro variable */
-infile 'D:\¿¬±¸\ÀÎ°øÁö´É\VigiBase Extract Case Level 2022 Jun 1\who_ddx_jun_1_2022\SRCE.txt' 
+infile 'D:\ì—°êµ¬\ì¸ê³µì§€ëŠ¥\VigiBase Extract Case Level 2022 Jun 1\who_ddx_jun_1_2022\SRCE.txt' 
    MISSOVER DSD lrecl=32767 firstobs=1;
 
 informat Reference_code $10. ;
@@ -804,7 +804,7 @@ run;
 /*Who_ddx-Organization*/
 data who.Organization;
 %let _EFIERR_ = 0; 
-infile 'D:\¿¬±¸\ÀÎ°øÁö´É\VigiBase Extract Case Level 2022 Jun 1\who_ddx_jun_1_2022\ORG.txt'
+infile 'D:\ì—°êµ¬\ì¸ê³µì§€ëŠ¥\VigiBase Extract Case Level 2022 Jun 1\who_ddx_jun_1_2022\ORG.txt'
 MISSOVER DSD lrecl=32767 firstobs=1;
 
 informat Organization_Id $10.;
@@ -827,7 +827,7 @@ run;
 /*Who_ddx-Country*/
 data who.Country;
 %let _EFIERR_ = 0; 
-infile 'D:\¿¬±¸\ÀÎ°øÁö´É\VigiBase Extract Case Level 2022 Jun 1\who_ddx_jun_1_2022\CCODE.txt'
+infile 'D:\ì—°êµ¬\ì¸ê³µì§€ëŠ¥\VigiBase Extract Case Level 2022 Jun 1\who_ddx_jun_1_2022\CCODE.txt'
 MISSOVER DSD lrecl=32767 firstobs=1;
 
 informat Country_code $10.;
@@ -847,7 +847,7 @@ run;
 /*Who_ddx-ATC*/
 data who.atc;
 %let _EFIERR_ = 0; /* set the ERROR detection macro variable */
-infile 'D:\¿¬±¸\ÀÎ°øÁö´É\VigiBase Extract Case Level 2022 Jun 1\who_ddx_jun_1_2022\ATC.txt' 
+infile 'D:\ì—°êµ¬\ì¸ê³µì§€ëŠ¥\VigiBase Extract Case Level 2022 Jun 1\who_ddx_jun_1_2022\ATC.txt' 
    MISSOVER DSD lrecl=32767 firstobs=1;
 
 informat ATC_code $10. ;
@@ -871,7 +871,7 @@ run;
 /*Who_ddx-Substance*/
 data who.substance;
 %let _EFIERR_ = 0; 
-infile 'D:\¿¬±¸\ÀÎ°øÁö´É\VigiBase Extract Case Level 2022 Jun 1\who_ddx_jun_1_2022\SUN.txt'
+infile 'D:\ì—°êµ¬\ì¸ê³µì§€ëŠ¥\VigiBase Extract Case Level 2022 Jun 1\who_ddx_jun_1_2022\SUN.txt'
 MISSOVER DSD lrecl=32767 firstobs=1;
 
 informat Substance_Id $10. ;
@@ -902,7 +902,7 @@ run;
 /*Who_ddx-Pharmaceutical Form*/
 data who.Pharmaceutical_Form;
 %let _EFIERR_ = 0; 
-infile 'D:\¿¬±¸\ÀÎ°øÁö´É\VigiBase Extract Case Level 2022 Jun 1\who_ddx_jun_1_2022\PF.txt'
+infile 'D:\ì—°êµ¬\ì¸ê³µì§€ëŠ¥\VigiBase Extract Case Level 2022 Jun 1\who_ddx_jun_1_2022\PF.txt'
 MISSOVER DSD lrecl=32767 firstobs=1;
 
 informat Pharmform_Id $10.;
@@ -922,7 +922,7 @@ run;
 /*Who_ddx-Strength*/
 data who.Strength;
 %let _EFIERR_ = 0; 
-infile 'D:\¿¬±¸\ÀÎ°øÁö´É\VigiBase Extract Case Level 2022 Jun 1\who_ddx_jun_1_2022\STR.txt'
+infile 'D:\ì—°êµ¬\ì¸ê³µì§€ëŠ¥\VigiBase Extract Case Level 2022 Jun 1\who_ddx_jun_1_2022\STR.txt'
 MISSOVER DSD lrecl=32767 firstobs=1;
 
 informat Strength_Id $10.;
@@ -942,7 +942,7 @@ run;
 /*WHO-PRG*/
 data who.PRG;
 %let _EFIERR_ = 0; /* set the ERROR detection macro variable */
-infile 'D:\¿¬±¸\ÀÎ°øÁö´É\VigiBase Extract Case Level 2022 Jun 1\who_ddx_jun_1_2022\PRG.txt'
+infile 'D:\ì—°êµ¬\ì¸ê³µì§€ëŠ¥\VigiBase Extract Case Level 2022 Jun 1\who_ddx_jun_1_2022\PRG.txt'
    MISSOVER DSD lrecl=32767 firstobs=1;
 
 informat Productgroup_Id $10. ;
@@ -965,7 +965,7 @@ run;
 /*Who_ddx-UnitX*/
 data who.UnitX;
 %let _EFIERR_ = 0; 
-infile 'D:\¿¬±¸\ÀÎ°øÁö´É\VigiBase Extract Case Level 2022 Jun 1\who_ddx_jun_1_2022\Unit-X.txt'
+infile 'D:\ì—°êµ¬\ì¸ê³µì§€ëŠ¥\VigiBase Extract Case Level 2022 Jun 1\who_ddx_jun_1_2022\Unit-X.txt'
 MISSOVER DSD lrecl=32767 firstobs=1;
 
 informat Unit_Id $10.;
@@ -986,7 +986,7 @@ run;
 /* who_ddx - Unit */
 data who.unit;
 %let _EFIERR_ = 0; /* set the ERROR detection macro variable */
-infile 'D:\¿¬±¸\ÀÎ°øÁö´É\VigiBase Extract Case Level 2022 Jun 1\who_ddx_jun_1_2022\UNIT.txt' 
+infile 'D:\ì—°êµ¬\ì¸ê³µì§€ëŠ¥\VigiBase Extract Case Level 2022 Jun 1\who_ddx_jun_1_2022\UNIT.txt' 
    MISSOVER DSD lrecl=32767 firstobs=1;
 
 informat Unit_Id $10. ;
@@ -1005,7 +1005,7 @@ run;
 /*Who_ddx-UnitL*/
 data who.UnitL;
 %let _EFIERR_ = 0; 
-infile 'D:\¿¬±¸\ÀÎ°øÁö´É\VigiBase Extract Case Level 2022 Jun 1\who_ddx_jun_1_2022\Unit-L.txt'
+infile 'D:\ì—°êµ¬\ì¸ê³µì§€ëŠ¥\VigiBase Extract Case Level 2022 Jun 1\who_ddx_jun_1_2022\Unit-L.txt'
 MISSOVER DSD lrecl=32767 firstobs=1;
 
 informat Unit_Id $10.;
